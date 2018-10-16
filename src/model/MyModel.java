@@ -12,12 +12,12 @@ public class MyModel
 	private ArrayList<String> spookylist;
 	private ArrayList<String> responselist;
 
-public Chatbot()
+public MyModel()
 {
 	
 }
 
-public Chatbot(String currentUser)
+public MyModel(String currentUser)
 	{
 		this.currentUser = currentUser;
 	}
@@ -52,4 +52,26 @@ public Chatbot(String currentUser)
 public ArrayList<String> getresponslist(ArrayList<String> responslist)
 {
 	return this.responselist;
+}
+
+{
+	this.joke = "Thanos Joke Thanos Joke";
+	this.currentUser = new String("Registered Nurse");
+	this.content = new String("Bottom Text");
+	
+	this.responselist = new ArrayList<String>();
+	this.spookylist = new ArrayList<String>();
+
+buildalist();
+}
+private void buildalist()
+{
+responselist.add("heyy, we don't really talk but rate 6/10");	
+responselist.add("Have you ever commited to tax fraud?");
+responselist.add("Do you play Angry Birds Rio?");
+responselist.add("Wanna commit tax fraud?");
+responselist.add("I don't feel so good Mr.Stark");
+responselist.add("Man does tax evasion sound good right now!");
+
+}
 }
