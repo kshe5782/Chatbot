@@ -12,12 +12,12 @@ public class MyModel
 	private ArrayList<String> spookylist;
 	private ArrayList<String> responselist;
 
-public MyModel()
-{
-	
-}
+	public MyModel()
+	{
 
-public MyModel(String currentUser)
+	}
+
+	public MyModel(String currentUser)
 	{
 		this.currentUser = currentUser;
 	}
@@ -49,29 +49,44 @@ public MyModel(String currentUser)
 	{
 		return this.spookylist;
 	}
-public ArrayList<String> getresponslist(ArrayList<String> responslist)
-{
-	return this.responselist;
-}
 
-{
-	this.joke = "Thanos Joke Thanos Joke";
-	this.currentUser = new String("Registered Nurse");
-	this.content = new String("Bottom Text");
-	
-	this.responselist = new ArrayList<String>();
-	this.spookylist = new ArrayList<String>();
+	public ArrayList<String> getresponslist(ArrayList<String> responslist)
+	{
+		return this.responselist;
+	}
 
-buildalist();
-}
-private void buildalist()
-{
-responselist.add("heyy, we don't really talk but rate 6/10");	
-responselist.add("Have you ever commited to tax fraud?");
-responselist.add("Do you play Angry Birds Rio?");
-responselist.add("Wanna commit tax fraud?");
-responselist.add("I don't feel so good Mr.Stark");
-responselist.add("Man does tax evasion sound good right now!");
+	{
+		this.joke = "Thanos Joke Thanos Joke";
+		this.currentUser = new String("Registered Nurse");
+		this.content = new String("Bottom Text");
 
-}
+		this.responselist = new ArrayList<String>();
+		this.spookylist = new ArrayList<String>();
+
+		buildalist();
+	}
+
+	private void buildalist()
+	{
+		responselist.add("heyy, we don't really talk but rate 6/10");
+		responselist.add("Have you ever commited to tax fraud?");
+		responselist.add("Do you play Angry Birds Rio?");
+		responselist.add("Wanna commit tax fraud?");
+		responselist.add("I don't feel so good Mr.Stark");
+		responselist.add("Man does tax evasion sound good right now!");
+		responselist.add("Committing federal crimes with you is fun. Thanos Fraud Thanos Fraud!");
+		responselist.add("We just commited tax fraud EASY SQUAD VICTORY ROYALE NOT CLICKBAIT!!!");
+
+		spookylist.add("Boo...Boo...Thanos Boo Thanos Boo!!!!!");
+		spookylist.add("Look behind you... there's a.... there's a...a a CREEPER!");
+		
+	}
+	public String bottomtext(String userText)
+	{
+		String output = "";
+		
+		output += ("You said: " + userText);
+		
+		return output;
+	}
 }
