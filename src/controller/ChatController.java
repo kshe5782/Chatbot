@@ -1,8 +1,9 @@
 package controller;
 
-import MyModel.MyModel;
+import Chatbot.Chatbot;
 
-public class MyController
+
+public class ChatController
 {
 	private MyController simpleBot;
 
@@ -17,12 +18,14 @@ public Controller()
 String userInput ="";
 
 while (!userInput.equalsIgnoreCase("quit"))
-{
-userInput = interactWithMyModel(String text);
 
-public String interactWithMyModel(String text)
-{
-	String userInput = JOptionPane.showInputDialog(null);
-	String chatbotSays = simpleBot.bottomtext(userInput);
-	return chatbotSays;
+userInput = interactWithMyModel(String text);
+	}
+
+	public String interactWithMyModel(String text)
+	{
+		String userInput = JOptionPane.showInputDialog(null);
+		String chatbotSays = simpleBot.bottomtext(userInput);
+		return chatbotSays;
+	}
 }

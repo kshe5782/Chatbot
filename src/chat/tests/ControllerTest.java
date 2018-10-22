@@ -2,6 +2,8 @@ package chat.tests;
 
 import static org.junit.Assert.*;
 
+import javax.swing.JOptionPane;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,6 +35,8 @@ public class ControllerTest
 	@Test
 	public void testInteractWithChatbot()
 	{
+		String output = "";
+		//String userResponse = JOptionPane.showInputDialog()
 		assertNotNull("Stub method used, implement with code", testController.interactWithChatbot(""));
 		assertNotNull("Null should not ever be returned", testController.interactWithChatbot(null));
 		assertTrue("If null is supplied user should be notified about it", testController.interactWithChatbot(null).toLowerCase().contains("null"));

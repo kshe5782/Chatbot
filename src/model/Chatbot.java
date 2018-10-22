@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import java.swing.JOtionPane;
 
-public class MyModel
+public class Chatbot
 {
 	private String currentUser;
 	private String joke;
@@ -12,12 +12,12 @@ public class MyModel
 	private ArrayList<String> spookylist;
 	private ArrayList<String> responselist;
 
-	public MyModel()
+	public Chatbot()
 	{
 
 	}
 
-	public MyModel(String currentUser)
+	public Chatbot(String currentUser)
 	{
 		this.currentUser = currentUser;
 	}
@@ -77,8 +77,9 @@ public class MyModel
 		responselist.add("Committing federal crimes with you is fun. Thanos Fraud Thanos Fraud!");
 		responselist.add("We just commited tax fraud EASY SQUAD VICTORY ROYALE NOT CLICKBAIT!!!");
 
-		spookylist.add("Boo...Boo...Thanos Boo Thanos Boo!!!!!");
-		spookylist.add("Look behind you... there's a.... there's a...a a CREEPER!");
+		spookylist.add("Boo...Boo...Thanos Halloween Thanos Halloween!!!!!");
+		spookylist.add("Look behind you... there's a.... there's a...a a CWEEPER!");
+		
 		
 	}
 	public String bottomtext(String userText)

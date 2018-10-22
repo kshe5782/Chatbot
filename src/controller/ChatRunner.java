@@ -1,6 +1,6 @@
 package controller;
 
-public class MyRunner
+public class ChatRunner
 {
 public 
 }
