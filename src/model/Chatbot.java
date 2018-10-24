@@ -79,8 +79,12 @@ public class Chatbot
 
 		spookylist.add("Boo...Boo...Thanos Halloween Thanos Halloween!!!!!");
 		spookylist.add("Look behind you... there's a.... there's a...a a CWEEPER!");
-		
-		
+		spookylist.add("Spooky tax fraud");
+		spookylist.add("Everyone.On October 31st this year we should all go to people's doors and ask for Fortnite candy. The look on their face will be awesome");
+		spookylist.add("It's spooky season BOIZ!");
+		spookylist.add("In the mornin' I'm makin pumpkin waffles");
+		spookylist.add("Happy Halloween!");
+		spookylist.add("Sticks and stones will break my spooky bones, but not if I find my calcuim");
 	}
 	public String bottomtext(String userText)
 	{
@@ -90,4 +94,21 @@ public class Chatbot
 		
 		return output;
 	}
+public boolean legitimacyChecker(String input)
+{
+boolean isValid = true;
+if(input==null);
+{
+isValid = false;
+}
+if(input.length() < 2)
+{
+	isValid = false;
+}
+else if(input.contains("asdf") || input.contains("palsjdd"))
+{
+	isValid = false;
+}
+return isValid;
+}
 }

@@ -1,15 +1,15 @@
 package controller;
 
-import Chatbot.Chatbot;
+import model.Chatbot;
 
 
 public class ChatController
 {
-	private MyController simpleBot;
+	private ChatController simpleBot;
 
-public Controller()
+public void Controller()
 {
-		simpleBot = new MyController();
+		simpleBot = new ChatController();
 }
 
 	public void start()
@@ -22,7 +22,7 @@ while (!userInput.equalsIgnoreCase("quit"))
 userInput = interactWithMyModel(String text);
 	}
 
-	public String interactWithMyModel(String text)
+	public String interactWithChatbot(String text)
 	{
 		String userInput = JOptionPane.showInputDialog(null);
 		String chatbotSays = simpleBot.bottomtext(userInput);
