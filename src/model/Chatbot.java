@@ -2,7 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
-import java.swing.JOtionPane;
+
 
 public class Chatbot
 {
@@ -50,7 +50,7 @@ public class Chatbot
 		return this.spookylist;
 	}
 
-	public ArrayList<String> getresponslist(ArrayList<String> responslist)
+	public ArrayList<String> getresponslist(ArrayList<String> responselist)
 	{
 		return this.responselist;
 	}
@@ -68,7 +68,7 @@ public class Chatbot
 
 	private void buildalist()
 	{
-		responselist.add("heyy, we don't really talk but rate 6/10");
+		responselist.add("heyy, we don't really talk but tbh would rate 6/10");
 		responselist.add("Have you ever commited to tax fraud?");
 		responselist.add("Do you play Angry Birds Rio?");
 		responselist.add("Wanna commit tax fraud?");
