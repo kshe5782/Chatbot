@@ -1,5 +1,7 @@
 package controller;
 
+import javax.swing.JOptionPane;
+
 import model.Chatbot;
 
 
@@ -19,13 +21,21 @@ String userInput ="";
 
 while (!userInput.equalsIgnoreCase("quit"))
 
-userInput = interactWithMyModel(String text);
+userInput = interactWithChatbot(String);
+	}
+	public String bottomText(String userText)
+	{
+		String output = "";
+		
+		output += ("You said: " + userText);
+		
+		return output;
 	}
 
 	public String interactWithChatbot(String text)
 	{
 		String userInput = JOptionPane.showInputDialog(null);
-		String chatbotSays = simpleBot.bottomtext(userInput);
+		String chatbotSays = simpleBot.bottomText(userInput);
 		return chatbotSays;
 	}
 }
