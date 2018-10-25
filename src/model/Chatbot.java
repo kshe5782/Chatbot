@@ -50,7 +50,7 @@ public class Chatbot
 		return this.spookylist;
 	}
 
-	public ArrayList<String> getresponslist(ArrayList<String> responselist)
+	public ArrayList<String> getresponselist(ArrayList<String> responselist)
 	{
 		return this.responselist;
 	}
@@ -76,7 +76,12 @@ public class Chatbot
 		responselist.add("Man does tax evasion sound good right now!");
 		responselist.add("Committing federal crimes with you is fun. Thanos Fraud Thanos Fraud!");
 		responselist.add("We just commited tax fraud EASY SQUAD VICTORY ROYALE NOT CLICKBAIT!!!");
-
+		responselist.add("you ever just hit a stanky tax fraud?");
+		responselist.add("I like tax fraud too!");
+		responselist.add("Listen I don't talk politics. Let's change the subject... how bout tax fraud?");
+		
+		
+		
 		spookylist.add("Boo...Boo...Thanos Halloween Thanos Halloween!!!!!");
 		spookylist.add("Look behind you... there's a.... there's a...a a CWEEPER!");
 		spookylist.add("Spooky tax fraud");
@@ -85,8 +90,9 @@ public class Chatbot
 		spookylist.add("In the mornin' I'm makin pumpkin waffles");
 		spookylist.add("Happy Halloween!");
 		spookylist.add("Sticks and stones will break my spooky bones, but not if I find my calcuim");
+		spookylist.add("Calcium time");
 	}
-	public String bottomtext(String userText)
+	public String bottomText(String userText)
 	{
 		String output = "";
 		

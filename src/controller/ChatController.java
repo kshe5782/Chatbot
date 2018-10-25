@@ -21,7 +21,7 @@ String userInput ="";
 
 while (!userInput.equalsIgnoreCase("quit"))
 
-userInput = interactWithChatbot(String);
+userInput = interactWithChatbot(String text);
 	}
 	public String bottomText(String userText)
 	{
