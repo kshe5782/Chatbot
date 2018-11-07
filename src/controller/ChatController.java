@@ -4,38 +4,52 @@ import javax.swing.JOptionPane;
 
 import model.Chatbot;
 
-
 public class ChatController
 {
 	private ChatController simpleBot;
 
-public void Controller()
-{
+	public void Controller()
+	{
 		simpleBot = new ChatController();
-}
+	}
 
 	public void start()
-
 	{
-String userInput ="";
+		String userInput = "";
 
-while (!userInput.equalsIgnoreCase("quit"))
+		while (!userInput.equalsIgnoreCase("quit"))
+		{
+			userInput = interactWithChatbot(userInput);
+		}
 
-userInput = interactWithChatbot(String text);
 	}
+
 	public String bottomText(String userText)
 	{
 		String output = "";
-		
+
 		output += ("You said: " + userText);
-		
+
 		return output;
 	}
 
 	public String interactWithChatbot(String text)
 	{
-		String userInput = JOptionPane.showInputDialog(null);
+		String userInput = JOptionPane.showInputDialog(null, "What's up B?");
 		String chatbotSays = simpleBot.bottomText(userInput);
 		return chatbotSays;
+	}
+
+	public String processText(String userText)
+	{
+		String answer = "";
+
+		answer += "You said:" + userText;
+
+		if (simpleBot.contentChecker(userText))
+		{
+			answer += "You said the special words. \n";
+		}
+		return answer;
 	}
 }

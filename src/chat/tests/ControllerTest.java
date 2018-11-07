@@ -14,6 +14,7 @@ public class ControllerTest
 {
 
 	private ChatController testController;
+
 	@Before
 	public void setUp() throws Exception
 	{
@@ -36,16 +37,18 @@ public class ControllerTest
 	public void testInteractWithChatbot()
 	{
 		String output = "";
-		//String userResponse = JOptionPane.showInputDialog()
+		// String userResponse = JOptionPane.showInputDialog()
 		assertNotNull("Stub method used, implement with code", testController.interactWithChatbot(""));
 		assertNotNull("Null should not ever be returned", testController.interactWithChatbot(null));
-		assertTrue("If null is supplied user should be notified about it", testController.interactWithChatbot(null).toLowerCase().contains("null"));
+		assertTrue("If null is supplied user should be notified about it",
+				testController.interactWithChatbot(null).toLowerCase().contains("null"));
 	}
 
 	@Test
 	public void testUseChatbotCheckers()
 	{
-		assertTrue("Spooky tester method not implemented", testController.useChatbotCheckers("spooky").contains("Halloween"));
+		assertTrue("Spooky tester method not implemented",
+				testController.useChatbotCheckers("spooky").contains("Halloween"));
 	}
 
 	@Test
