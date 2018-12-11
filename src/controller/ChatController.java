@@ -42,14 +42,15 @@ public class ChatController
 
 	public String processText(String userText)
 	{
+		String output;
 		String answer = "";
 
 		answer += "You said:" + userText;
-
-		if (simpleBot.contentChecker(userText))
+		output int randomIndex = (int)(Math.random() * responselist.size());
+		if (simpleBot.contentChecker(userText));
 		{
 			answer += "You said the special words. \n";
 		}
-		return answer;
+	return answer;
 	}
 }
