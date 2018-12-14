@@ -54,15 +54,17 @@ public class ChatController
 		}
 	return answer;
 	}
+
 	public void handleErrors(Exception error)
 	{
 		JOptionPane.showMessageDialog(appFrame, error.getMessage());
 	}
-	
+
 	public void handleErrors(generic Error)// and this should be the last needed fix for IOController
 	{
-		
+
 	}
+
 	// add a frame and panel and import them
 	public Chatbot getChatbot()// fix this
 	{

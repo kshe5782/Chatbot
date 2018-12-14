@@ -11,47 +11,46 @@ public class IOController
 
 	public static void saveText(ChatController app, String path, String textToSave)
 	{
-		try 
+		try
 		{
-			String fileName = path; 
+			String fileName = path;
 			Calendar date = Calendar.getInstance();
 			fileName += "/" + date.get(Calendar.MONTH) + " " + date.get(Calendar.DAY_OF_MONTH);
 			fileName += " at " + date.get(Calendar.HOUR) + "-" + date.get(Calendar.MINUTE);
 			fileName += "Chatbot save.txt";
-			
+
 			File saveFile = new File(fileName);
-			Scanner textScanner = new Scanner (textToSave);
+			Scanner textScanner = new Scanner(textToSave);
 			PrintWriter saveText = new PrintWriter(saveFile);
-			while(textScanner.hasNext())
+			while (textScanner.hasNext())
 			{
 				String currentLine = textScanner.nextLine();
 				saveText.println(currentLine);
 			}
-			
+
 			textScanner.close();
 			saveText.close();
-		
+
 		}
-		catch(IOException error)
+		catch (IOException error)
 		{
 			app.handleErrors(error);
 		}
-		catch(Exception genericError)
+		catch (Exception genericError)
 		{
 			app.handleErrors(genericError);
 		}
-		}
-	
-		
-		public static String loadFile(ChatController app, String path)
+	}
+
+	public static String loadFile(ChatController app, String path)
+	{
+		String contents = "";
+
+		try
 		{
-			String contents = "";
-			
-			try
-			{
 			File saveFile = new File(path);
 			Scanner fileScanner;
-			if(saveFile.exists())
+			if (saveFile.exists())
 			{
 				fileScanner = new Scanner(saveFile);
 				while (fileScanner.hasNext())
@@ -60,16 +59,16 @@ public class IOController
 				}
 				fileScanner.close();
 			}
-			}
-		catch(IOException error)
+		}
+		catch (IOException error)
 		{
 			app.handleErrors(error);
 		}
-		catch(Exception genericError)
+		catch (Exception genericError)
 		{
 			app.handleErrors(genericError);
 		}
 		return contents;
-	
-}
+
+	}
 }
