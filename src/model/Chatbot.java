@@ -83,7 +83,7 @@ public class Chatbot
 		spookylist.add("Spooky tax fraud");
 		spookylist.add("Everyone.On October 31st this year we should all go to people's doors and ask for Fortnite candy. The look on their face will be awesome");
 		spookylist.add("It's spooky season BOIZ!");
-		spookylist.add("In the mornin' I'm makin pumpkin waffles");
+		spookylist.add("In the mornin' I'm makin shmumpkin waffles");
 		spookylist.add("Happy Halloween!");
 		spookylist.add("Sticks and stones will break my spooky bones, but not if I find my calcuim");
 		spookylist.add("Calcium time");
